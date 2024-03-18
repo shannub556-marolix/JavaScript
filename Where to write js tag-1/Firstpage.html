@@ -1,0 +1,30 @@
+<html>
+<head>
+<style> #bgcolor {color:blue} </style>
+
+<script src="external.js"> </script>
+</head>
+
+<body id="bgcolor">
+<h1> Chnage Html Content </h1>
+<h2 id="day"> It is Monday </h2>
+<button type="button" onclick='getElementById("day").innerHTML="It is Tuesday"'> Tuesday</button><br>
+<h1> CHnage Html Property </h1>
+<img id="image" src="https://t3.ftcdn.net/jpg/00/20/23/84/360_F_20238404_QWpOgaN7g1sTC28vkaf39T7mfVKKo455.jpg" width="500" height="300"> <br><br>
+<button type="button" onclick='getElementById("image").src="https://img.freepik.com/free-photo/majestic-bengal-tiger-fierce-wild-hides-tropical-rainforest-generated-by-artificial-intellingence_25030-63904.jpg"'> Tiger Image</button><br>
+<button type="button" onclick='getElementById("image").height="700"'> Height-700</button><br>
+
+<h1> Change css property </h1>
+<button type="button" onclick='getElementById("bgcolor").style.color="green"'> Chnage to green</button><br><br>
+
+<h1> Hiding and Unhiding content </h1>
+<h2 id="text"> Hello this is shanmukha </h2>
+<button type="button" onclick='getElementById("text").style.display="none"'>Hide text</button><br>
+<button type="button" onclick='getElementById("text").style.display="block"'>Display text</button><br>
+
+<h1> Working with Imported SCript </h1>
+<h2 id="text2" > Text in same file </h2>
+<button type="button" onclick="fun()" > Click here </button>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+what is Javascript 
+	Javascript is a scripting language, which can be used to perform client side scripting or server side scripting
+Introduction to Javascript
+	mainly javascript is used for client side scripting 
+	we can develop dynamic web pages 
+	we can modify html content , onclick='getElementById("html_id").innerHTML="modified Content"' 
+	we can modify html attributes, onclick='getElementById("Attribute_id").Attribute="modified Content"'
+	we can modify css conetnt , onclick='getElementById("html_id").style.Attribute="modified Content"'
+	we can hide/unhide display content, onclick='getElementById("id").style.display="none/block"'  , none for hide and block for unhide
+where to write js script tags
+	inline text, same line on html 
+	defining js text under script tag, scripts tag can be deinied under head tag or inside body tag
+	external file, by using script tag including that external file in html 
+Displaying Output 
+	innerHTML, with the help of id we will display conetnt
+	wirte, document.write("content"), without id we can display content
+	alert, window.alert("content"), alert message on entering webpage
+	console, console.log("content"), which will display content on console, to open console press F12
+	print, onclick="print()", when ever user enters print button it will allow user to download webpage as pdf
+Identifiers 
+	Indentifies are nothing but varibale names or function names or constants
+	can be started with letter(a-z) or underscore(_) ,  ex:- abc, _abc
+	special characters are not allowed except '$' and '_'  ex:- hello$, Hello$_hi
+	keywords cannot be used as Indentifies   ex:- break(invalid)
+varibales
+	varibales are declared using var keyword and thier paticular values of that varibales are assigned using assignment operator(=)
+
