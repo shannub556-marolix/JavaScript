@@ -24,4 +24,54 @@ Identifiers
 	keywords cannot be used as Indentifies   ex:- break(invalid)
 varibales
 	varibales are declared using var keyword and thier paticular values of that varibales are assigned using assignment operator(=)
-
+Datatypes
+	In Javascript we have
+		numbers ,  ex:- 1, 2.3 , even the float/decimal values are considered as numbers 
+		string , ex:- 'hello', "hello", "hello's", 'hello"s' 
+		boolean , ex:- true, false
+		object(Array, name:value) , ex;- [1,2,3], {name:'shannu', age : 28}
+		undefined , ex:- var a,  varibales which are declared but not initialized with values 
+	Accessing elements in objects 
+		var a=[1,2,4,5] 
+			with the help of index posistion we can access elements , ex:- a[0], a[2] which gives 1,4
+		var b={name:'shannu', age : 34}
+			with the help of varibale we can access value , ex:- b.name, b.age which gives shannu, 34
+Functions
+	User Defined Functions
+		Fucntions are declared using keyword function()
+			Ex:- function fun_name(paranthesis){
+				statement
+				return
+			}
+		Here, paranthesis is input and statement is logic 
+Conditional Statements
+	if , else if, else 
+	syntax:- if (condition)					if (condition)
+				{								{
+					statement						statement
+				}								}
+			 else if (condition)			else 
+			 	{								{
+					statement						statement
+				}								}
+			 else 
+			 	{
+					statement
+				}
+Switch Case
+	if we need to check multiple selection , then we will consider siwth Case
+	in siwth case, if given expression/value matches with anyone one of the label then it will excute that associated statement
+	if we won't pass break then it will goes on continously checking all lablel
+	break will take control out of switch case 
+	In case of (expression/value) it will take only int,char,expression
+	syntax : switch (expression/value)
+				{
+			case label 1 : statement;
+							break;
+			case label 2 : statement;
+							break;
+			case label 3 : statement;
+							break;
+			default : statement ;
+						break;
+				}	

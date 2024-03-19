@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script>
+            function calculate(){
+                var percentage=(document.getElementById('om').value/document.getElementById('mm').value)*100;
+                document.getElementById('per').value=percentage;
+                var g;
+                switch(Math.floor(percentage/10)){
+                    case 9: g='Outstanding';
+                    break;
+                    case 8: g='Outstanding';
+                    break;
+                    case 7: g='distinction';
+                    break;
+                    case 6: g='Better';
+                    break;
+                    case 5: g='good';
+                    break;
+                    case 4: g='pass';
+                    break;
+                    default : g='Fail';
+                    break;
+                }
+                document.getElementById('gd').value=g;
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1> Calculating percntage and grade for obtained marks </h1><br>
+        <h3>Enter maximum marks <input type="text" id="mm"></h3><br>
+        <h3>Enter obtained marks <input type="text" id="om"></h3><br>
+        <button type="button" onclick="calculate()">Submit</button><br><br>
+        <h3>percntage <input type="text" id="per"></h3><br>
+        <h3>Grade <input type="text" id="gd"></h3><br>
+
+    </body>
+</html>

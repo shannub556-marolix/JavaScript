@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script>
+            function get(){
+                if (document.getElementById("t1").value==document.getElementById("t2").value)
+                {
+                    document.getElementById('sec').innerHTML="Both numbers are same"
+                }
+                else if (document.getElementById('t1').value > document.getElementById('t2').value)
+                {
+                    document.getElementById('sec').innerHTML="Number1 is grater that second"
+                }
+                else
+                {
+                    document.getElementById('sec').innerHTML="Number2 is greater that First"
+                }
+
+            }
+
+            function check()
+            {
+                if (document.getElementById('c1').value==4)
+                {
+                    document.getElementById('sec').innerHTML="Given Number is equal to 4"
+                }
+                else 
+                {
+                    document.getElementById('sec').innerHTML="Given number is not equal to 4"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>CHecking two numbers</h1>
+        <h2>  Number 1 <input type="text" id="t1"></h2>
+        <h2> Number 2 <input type="text" id="t2"></h2>
+        <button type="button" onclick="get()" > Submit </button><br><br>
+
+        <h1>CHecking given number equals to 4</h1>
+        <h2>  Enter your Number  <input type="text" id="c1"></h2>
+        <button type="button" onclick="check()" > Submit </button><br><br><br>
+
+        <div id="sec"></div>
+    </body>
+</html>
