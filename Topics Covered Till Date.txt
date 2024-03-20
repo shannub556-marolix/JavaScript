@@ -75,3 +75,32 @@ Switch Case
 			default : statement ;
 						break;
 				}	
+Iterative Statements
+	To excute multiple statement , we consider loops
+	for and while loop											initilization;				
+	syntax :- for (initilization; condition; updation)							while(condition)
+					{										{	
+						statement;									statement;
+					}											updation;
+															}	
+
+Numbers
+	In javascript , irrespective of Datatypes we can intialize varibales with var keyword
+	In javascript , '6' is Numeric string    and   'ABC' is string
+	In javascript , integer and decimal precision will have limit upto 15 digits for integer and 17 for decimal precision, after that it will give inaccurate values
+	for numbers , while concatinating with string or performing some operations will show some different characters
+	in Javascript , interpreter will consider from left to right , so that if addition is there it will add and do remaining operations
+	In Addition
+		8+2=10        int and int
+		'8'+2=82		from left we have string , Here it will take it as string and string and return a string by concatinating  
+		2+2+'8'=48		from left we have num , num, string, so here from left first it will add firt two and then it concatinate string 	
+		'8'+2+2=822		from left we have string, so it will concatinate and then concatinated string will be again concatinated as string
+	For remaining operations , it will remain same and whether it is numeric string or number it will consider it as int
+		8-2=6		integer and integer
+		'8'-'2'=6	here , we have numeric string and numeric string but it will consider it as integer and it will perform regular operation
+		2-'8'=-6	here, integer and Numeric string , string will be consider as integer and perform regular expression
+		'20'*10=200 here , Numeric string and integer , it will consider it as integer and multiplied 
+		'20'/'10'=2		here, Numeric string and Numeric string , it will consider it as integer and divided
+		'2'/0=Infinity  here, Numeric string and integer , it will consider it as integer and divided , which resulted infity because divided by zero
+		'2'/'abc'=Nan   here, it is numeric string and string , so it will return Nan(Not a number)
+
