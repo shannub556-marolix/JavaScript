@@ -1,0 +1,63 @@
+<html>
+    <body>
+        <h1>String , String Objects  and String Methods</h1>
+        <script>
+            var s1="Welcome to Javascript"
+            document.write('String  = ',s1+'<br>')
+            document.write('String  type is = ',typeof s1+'<br>')
+
+            var s2= new String("this is string object")
+            document.write('<h2>String 2= new String("this is string object")</h2><br>')            
+            document.write('String s2 type is = ',typeof s2+'<br>')
+
+            document.write('<h2>String Inbuilt Method</h2><br>')            
+            document.write('indexOf()  method - ',s2.indexOf('i')+'<br>')
+            document.write('indexOf()  method(char not available will give) - ',s2.indexOf('z')+'<br>')
+            document.write(" lastIndexOf() method - ",s2.lastIndexOf('i'),'<br>')
+            document.write(" lastIndexOf() method (with start position) - ",s2.lastIndexOf('i',9    ),'<br>')
+            document.write(" search() method - ",s2.search('i'  ),'<br>')
+            document.write(" slice() method - ",s2.slice(0,8),'<br>')
+            document.write(" slice() method with negative indexing- ",s2.slice(-17,-5),'<br>')
+            document.write(" slice() method with positive and negative indexing- ",s2.slice(0,-5),'<br>')
+            document.write(" substring() method - ",s2.substring(0,15),'<br>')
+            document.write(" substr() method - ",s2.substr(0,5),'<br>')
+            document.write(" replace() method - ",s2.replace('string','modified string'),'<br>')
+            
+            var s3='string in small letters'
+            var s4= '  String HALF LOwer  '
+            document.write(" toUppercase() method - ",s3.toUpperCase(),'<br>')
+            document.write(" tolowercase() method - ",s4.toLowerCase(),'<br>')
+            document.write(" concat() method - ",s1.concat(s3,s4),'<br>')
+            document.write(" length method s4 is - ",s4.length,'<br>')
+            var s6= s4.trim()
+            document.write(" trim() method - ",s4.trim(),'<br>')
+            document.write('length after trim of s4 is ', s6.length,'<br>')
+            document.write('charAt() method  s4 is ', s4.charAt(5),'<br>')
+            document.write('charcodeAt() method  s4 is ', s4.charCodeAt(5),'<br>')
+            for (i=0;i<s3.length;i++){
+                document.write(s3[i],'<br>')
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+    <body>
+        <h1>Number Objects in JS</h1>
+        <script>
+            var a=10;
+            var b= new Number(10);
+            var c = new Number(10);
+            var e= a.toExponential(2);
+            var n = 5.47564744;
+            document.write('variables a,b,c,e  ','<br>')
+            document.write('Type of a is   ('+a+') ',typeof a+'<br>')
+            document.write('Type of b is   ('+b+') ',typeof b+'<br>')
+            document.write('Type of c is   ('+c+') ',typeof c+'<br>')
+            document.write('Type of e is  ('+e+')  is ',typeof e+'<br>')
+
+
+            document.write('Comparing integer and number object will return  (a==b)   ',(a==b)+'<br>')
+            document.write('Comparing integer and number object , datatype will return  (a===b)   ',(a===b)+'<br>')
+            document.write('Comparing number object and number object, value will return  (b==c)   ',(b==c)+'<br>')
+            document.write('Comparing number object and number object, datatype  will return  (b===c)   ',(b===c)+'<br><br><br><br>')
+
+            document.write('<h1>Coverting to string, numbers, exponential </h1><br>')
+            var s=a.toString();
+            document.write('coverting integer a to string , var s = a.toString() and typeof s  ('+s+') is ', typeof s+'<br>')
+            var d=Number(e);
+            document.write('coverting Exponential to number , var d = e.Number() and typeof d is  ('+d+')', typeof d+'<br>')
+            var f=n.toFixed(4);
+            document.write('Rounding  decimal ponits  to 4 digits , var f = n.toFixed(4) and the number is  ('+f+') <br>')
+            var g=n.toPrecision(4);
+            document.write('Rounding  number to 4 digits , var g = n.toPrecision(4) and the number is  ('+g+') <br>')
+            var h=parseInt(f);
+            document.write('Getting integer from float number having four decimal values , var h = ParseInt(f) and the number is  ('+h+') <br><br><br><br><br>')
+            document.write('<h1> Number Properties </h1>')
+            document.write('Max values of number is',Number.MAX_VALUE+'<br>')
+            document.write('Min values of number is',Number.MIN_VALUE+'<br>')
+
+
+
+
+            
+
+
+
+
+        </script>
+    </body>
+</html>
