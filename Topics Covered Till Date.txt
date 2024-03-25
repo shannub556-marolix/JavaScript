@@ -187,6 +187,205 @@ String Objects and String Methods
 		syntax : var s1=s[3]     --> b
 		with the help of above syntax we can access elements in given string by passing index position of element
 
+Arrays - Creating , Accessing , Updating , Inserting , Deleting and Looping
+	Creating Arrays
+		we can create a array by passing values in square bracket or with the help of new keyword  
+		if we pass onky one element in new Array(4), then it will be considered as Array object of length 4 
+		syntax :- var a = [11,2,35,5]        or var a =new Array(1,3,5,6)
+	length
+		we can get the length of array by using length method 
+		syntax : var a =[11,2,35,5] 
+				 var b = a.length
+	Accesing elemets in Array
+		with the help of indexing we can access elements in Array 
+		syntax : var a =[11,2,35,5] 
+				 var b = a[2]    ---> 35
+		and for name value pair object values can be accessed with the name 
+		syntax : var a ={"student":"shannu", "Age":"24"}
+				 var b = a.student     ----> shannu
+		Accesing elements with the help of for loop
+		syntax:	var a =[1,3,4,67,7]
+				for (i=0;i<a.length;i++){
+					document.writeln(a[i],'  ')
+				}
+				----> 1  3  4  67  7
+	Updating Elements 
+		with the help of index position we can update values in Array object
+		syntax:	var a =[1,3,4,67,7]
+				a[0]=20     ---> a=[20,3,4,67,7]
+	Deleting Elements 
+		with the help of delete keyword and index position we can delete elements in Array 
+		even we delete one element, length of Array remains , because the deleted element position will be remained as empty but length will remain same 
+		syntax:	var a =[1,3,4,67,7]
+				delete[1]     ---> a=[1,,4,67,7]
+	Inserting Elements into Array
+		with the help of index position we can insert elements into Array
+		if we insert element in Array where a element aleady exsisted in that posistion then it will be updated with new given elements, which is same to updation
+		if length of Array is 4 and we insert element at 7 posistion then index posistion of 4,5 will be updated as empty  automatically  
+		syntax:	var a =[1,3,4,67,7]
+				a[7]=90      -----> [1,2,4,67,7,,,90]
+	Array.isArray() method
+		by default , if we check type of that array we will get object
+		to check it as array , we have method , isArray
+		syntax:	var a =[1,3,4,67,7]
+				document.writeln(Array.iArray(a))         ---->True
+Array_Methods
+	join()
+	with the help of given separator it will join all elements in a Array with the given separator and return that joined Elements
+	syntax : var a = [1,3,4]    
+			 var b = a.join('-')       --->1-3-4
+	sort()
+	By using sort method we can arrange elements in ascending order 
+	Espically with the character, basedupon Asccii values it will filter
+	syntax : var a = ['hello', 'this' , 'is' , 'javascript']  
+			 a.sort()           ----> ['hello','is','javascript','this']
+	reverse()
+	with the help of this we can reverse the elements in a given Array 
+	syntax : var a = [1,3,4]
+			 a.reverse()        ------> [4,3,1]
+	pop()
+	with the help of method we can remove last element in a given Array 
+	it will remove that last element and return that element
+	syntax : var a = [1,3,4]
+			 a.pop()        -----> 4   
+			 And a will be a--> [1,3]
+	push()
+	with the help of push method we can add elements at end of the Array
+	After Adding element it will return length of that Array
+	syntax : var a = [1,3,4]
+			 a.push("10")     ----> 4
+			 and a will be a=[1,3,4,10]
+	shift()
+	with this method we can remove element at the beggining of Array
+	it will remove and return that first element  from that Array
+	syntax : var a = [1,3,4]
+			 a.shift()    ---> 1
+			 and a will become a=[3,4]
+	unshift()
+	with the help of this method we can add element at the beggining 
+	and it will return length of that Array after adding the element
+		syntax : var a = [1,3,4]
+				 a.unshift('5')    ----> 4
+				 and a will become a = [4,1,3,4]
+	concat()
+	with the help of this method , we can add one Array to another or multiple Arrays
+	syntax : var a = [1,3,4]
+			 var b = [5,4,6]
+			 a.concat(b)      -----> 1,3,4,5,4,6
+			 a.concat("10")   ----> 1,3,4,10
+	splice()
+	this method will insert elements as well as it will delete elements at a time according to input
+	if we pass Arguments as splice(1,2,"40","50"), it considers as from index posistion delete 2 elements(1,2 posistion) and insert 40,50 at index posistion 1
+	if w pass Arguments as splice(1,0,"2"), it consider as at index posistion we insert 2, and we won't delete any elements
+	this will remove and return that deleted elements  
+	syntax : var a = [1,3,4]
+			 a.splice(1,1,"6")   -->  3
+			 and a will be a = [1,6,4]
+			 a.splice(1,0,"45","44")   ---> 
+			 and a will be a=[1,45,44,3,4]
+	slice()
+	with the help of this method we can extract elements from given start index to end index posistion
+		syntax : var a = [1,3,4]
+				 a.slice(1,2)  ---> 3
+				 var a =[1,3,4,5,67,8]
+				 a.slice(3)   ---> 5,67,8
+Date_Object
+	we can create Date object with the help of new keyword 
+	Date object can be created in different ways
+		Date object without any arguments will return current date and time in this format - (Mon Mar 25 2024 18:57:20 GMT+0530 (India Standard Time)), it will be automatically updated whenever we refresh
+			syntax :-  var a = new Date()    ----> Mon Mar 25 2024 18:57:20 GMT+0530 (India Standard Time)
+		Orelse we can create date object by passing manual date time format 
+			syntax :-  var a1=new Date(2024,2,24,18,43,34 )   ---> Sun Mar 24 2024 18:43:34 GMT+0530 (India Standard Time)
+			if we pass only year as an argument, then that will be considered as miliseconds
+			if we don't pass any argument in date object except year then, it will automatically consider it's defualt value 
+				for miliseconds it will be 00     ---> Sun Mar 24 2024 18:43:00 GMT+0530 (India Standard Time)
+				for minutes it will be 00      --->Sun Mar 24 2024 18:00:00 GMT+0530 (India Standard Time)
+				for hours it will be 00        --->  Sun Mar 24 2024 00:00:00 GMT+0530 (India Standard Time)
+				for date it will be 01       ----> Fri Mar 01 2024 00:00:00 GMT+0530 (India Standard Time)
+				for month it will be it will consider year as miliseconds and return date-time according to that miliseconds   --->Thu Jan 01 1970 05:30:02 GMT+0530 (India Standard Time)
+		Neither we can pass arguments as string in Date_Object
+			syntax :- var a10=new Date('2024 jan 12 20:34')    --->  Fri Jan 12 2024 20:34:00 GMT+0530 (India Standard Time)
+			we can pass date and time format in string by mentoning details
+Date_Objects getmethod()
+	var d = new Date()     --->Mon Mar 25 2024 19:29:45 GMT+0530 (India Standard Time)
+	with the help of Date_Object we get date and time , from that to get time ,day and year ,etc---- we have get methods to get that feilds
+		year = d.getFullYear()   ---> 2024
+		Month= d.getMonth()   ---> 2
+		Date= d.getDate()   ---> 25
+		Day= d.getDay()   ---> 1 
+		Hours= d.getHours()   ---> 19
+		Minutes= d.getMinutes()   ---> 29
+		seconds= d.getSeconds()   ---> 45
+		Milliseconds= d.getMilliseconds()   ---> 160
+		Time= d.getTime()   ---> 1711375185160
+Date_Objects Setmethod()
+	var d = new Date()     --->Mon Mar 25 2024 19:58:24 GMT+0530 (India Standard Time)
+	After getting Date and time , we can set/update paticular attributes like date, year and all etc-- according to our requiremenet
+            d.setFullYear(2022,2)
+            document.write('New year = ',d,'<br>')   --->Fri Mar 25 2022 19:58:24 GMT+0530 (India Standard Time)
+            d.setMonth(3)
+            document.write('New Month = ',d,'<br>')   --->Mon Apr 25 2022 19:58:24 GMT+0530 (India Standard Time)
+            d.setDate(22)
+            document.write('New Date = ',d,'<br>')   -->Fri Apr 22 2022 19:58:24 GMT+0530 (India Standard Time)
+            d.setHours(13)
+            document.write('New Hour = ',d,'<br>')    --->Fri Apr 22 2022 13:58:24 GMT+0530 (India Standard Time)
+            d.setMinutes(12)
+            document.write('New Minutes = ',d,'<br>')  --->Fri Apr 22 2022 13:12:24 GMT+0530 (India Standard Time)
+            d.setSeconds(34)
+            document.write('New Seconds = ',d,'<br>')  --->Fri Apr 22 2022 13:12:34 GMT+0530 (India Standard Time)
+            d.setMilliseconds(12)
+            document.write('New Milliseconds = ',d,'<br>')  --->Fri Apr 22 2022 13:12:34 GMT+0530 (India Standard Time)
+            d.setTime(1034556)
+            document.write('New Time = ',d,'<br>')   ---> Thu Jan 01 1970 05:47:14 GMT+0530 (India Standard Time)
+Math Module
+	we will be having some inbuilt methods to perform mathematical operations , like max , min , etcc....
+			document.write('max ', Math.max(1,3,5,6,89,66),'<br>')  --->89
+            document.write('abs(-10) ', Math.abs(-10),'<br>')    --->10
+            document.write('cbrt(27) ', Math.cbrt(27),'<br>')    --->3
+            document.write('ceil(3.1) ', Math.ceil(3.1),'<br>')  --->4
+            document.write('exp(3) ', Math.exp(3),'<br>')        --->20.08553692318766
+            document.write('floor(3.9) ', Math.floor(3.9),'<br>')  --->3
+            document.write('log(2) ', Math.log(2),'<br>')     ---> 0.6931471805599453
+            document.write('min(2,4,5,66,31,1) ', Math.min(2,4,5,66,31,1),'<br>')    --->1
+            document.write('pow(2,3) ', Math.pow(2,3),'<br>')     --->8
+            document.write('random() ', Math.random(),'<br>')     ---> 0.9852709896988407
+            document.write('round(2.3) ', Math.round(2.3),'<br>')    --->2
+            document.write('round(2.6) ', Math.round(2.6),'<br>')   --->3
+            document.write('sqrt(81) ', Math.sqrt(81),'<br>')    --->9
+	
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+	
+
+	
+
+
+	
+
+
+
+
+
+
+
+
+				 
+
+	
+
+
 
 
 

@@ -1,0 +1,48 @@
+<html>
+    <body>
+        <script>
+            document.write('<h1>Arrays - Creating , Accessing , Updating , Inserting , Deleting and Looping</h1>')
+            var a= [1,3,4,6]
+            var b = new Array(3,45,67)
+            document.write(a,'<br>')
+            document.write(b,'<br>')
+            document.writeln('type of a is',typeof a,'<br>', 'type of b is',typeof b,'<br><br><br><br>')
+            document.write('<h1> Length </h1>')
+            document.write('length of a is ', a.length,'<br><br><br><br>')
+            document.write('<h1> Accessing Elements in Array </h1>','<br>')
+            document.write('a[0] is ',a[0],'<br>')
+            var c ={"student":"shannu","Age":24}
+            document.write(c,'<br>')
+            document.write('Accesing elements in name value pair  ', c.student, c.Age, '<br>')
+            document.write('Accesing elements using folr loop  ', '<br>')
+            for (i=0;i<a.length;i++){
+                document.write(a[i],'<br>')
+            }
+            document.write('<br><br><br>')
+            document.write('<h1> Updating Elements in Array </h1>','<br>')
+            document.write(' elements in Array Before Updating   ',a, '<br>')
+            a[0]=20
+            document.write(' elements in Array After Updating  a[0]=20  is ',a, '<br>')
+            document.write('<br><br><br>')
+            document.write('<h1> Deleting Elements in Array </h1>','<br>')
+            delete a[1]
+            document.write(' elements in Array After Deleting  delete a[0] is   ', a , '<br>')
+            document.write('<br><br><br>')
+            document.write('<h1> Inserting Elements into Array </h1>','<br>')
+            a[7]=34
+            document.write(' elements in Array After Inserting a[7]=34 is   ', a , '<br>')
+            document.write('<br><br><br>')
+            document.write('<h1> Checking Array with Array method </h1>','<br>')
+            document.write(' Verifiying Array Whether it is Array or not with Array method  is  ', Array.isArray(a) , '<br>')
+
+            
+            
+            
+
+
+
+
+
+        </script>
+    </body>
+</html>

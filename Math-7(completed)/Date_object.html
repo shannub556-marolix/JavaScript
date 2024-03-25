@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <script>
+            document.write('<h1> Date Object Module </h1><br>')
+            var a = new Date()
+            document.write(a,'<br>')
+            var a1=new Date(2024,2,24,18,43,34 )
+            document.write('manul format = ',a1,'<br>')
+            var a2=new Date(2024,2,24,18,43 )
+            document.write('manul format without milisecond = ',a2,'<br>')
+            var a3=new Date(2024,2,24,18 )
+            document.write('manul format without milisec and minutes= ',a3,'<br>')
+            var a4=new Date(2024,2,24 )
+            document.write('manul format without milisec, minutes and hours= ',a4,'<br>')
+            var a5=new Date(2024,2 )
+            document.write('manul format without milisec,mins,hours and date= ',a5,'<br>')
+            var a6=new Date(2024 )
+            document.write('manul format with only year consider as millisecond= ',a6,'<br>')
+            var a7=new Date(24,2)
+            document.write('manul format with only two digit year(24) and month = ',a7,'<br>')
+            var a8=new Date(100000000)
+            document.write('manul format with only year consider as millisecond= ',a8,'<br>')
+            var a9=new Date(-10000000000 )
+            document.write('manul format with only year(negative) consider as millisecond= ',a9,'<br>')
+            var a10=new Date('2024 jan 12 20:34')
+            document.write('manul format with string = ',a10,'<br>')
+            
+            
+        </script>
+    </body>
+</html>
