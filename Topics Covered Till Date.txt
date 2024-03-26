@@ -352,7 +352,12 @@ Math Module
             document.write('round(2.3) ', Math.round(2.3),'<br>')    --->2
             document.write('round(2.6) ', Math.round(2.6),'<br>')   --->3
             document.write('sqrt(81) ', Math.sqrt(81),'<br>')    --->9
-	
+HTML DOM
+	DOM- Document Object Model
+	when a html page is loaded, Browser will automatically create DOm object  
+	DOM will be in the form of Tree like data structure and document will acts a root node for all Attribute and Methods in DOM
+	The HTML DOM is a standard for how to get, change, add, or delete HTML elements as well as to perform operation on css style properties
+
 
 
 
